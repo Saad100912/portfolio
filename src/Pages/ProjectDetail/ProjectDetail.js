@@ -21,7 +21,7 @@ const ProjectDetail = () => {
     } = project;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/projects/${id}`)
+        fetch(`https://sleepy-garden-01616.herokuapp.com/projects/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setProject(data);
