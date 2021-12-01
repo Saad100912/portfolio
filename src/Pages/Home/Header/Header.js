@@ -13,11 +13,9 @@ const Header = () => {
                             MERN Stack Web Developer
                         </h4>
                         <p className="text-white">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Iste quas voluptas cum iusto sit dicta quo
-                            omnis delectus nemo tenetur, repellendus autem
-                            repudiandae, beatae quaerat porro? Sapiente, eveniet
-                            nam? Ratione.
+                            A talented, quick learner IT professional with a
+                            passion for tailored solutions seeks for a thrilling
+                            and exciting career.
                         </p>
                         <div className="my-5">
                             <a

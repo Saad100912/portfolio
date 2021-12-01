@@ -3,10 +3,9 @@ import Project from "./Project";
 
 const Projects = () => {
     const [projects, setProjects] = useState([]);
-    console.log(projects);
 
     useEffect(() => {
-        fetch("http://localhost:5000/projects")
+        fetch("https://sleepy-garden-01616.herokuapp.com/projects")
             .then((res) => res.json())
             .then((data) => {
                 setProjects(data);

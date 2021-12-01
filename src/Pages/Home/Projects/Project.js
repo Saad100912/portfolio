@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Project = ({ project }) => {
-    const { img1, title, _id, liveSite, clientSide, serverSide } = project;
+    const { img1, title, _id } = project;
 
     return (
         <div className="p-5 bg-blue-300 rounded-lg">
@@ -12,28 +13,12 @@ const Project = ({ project }) => {
             />
             <h2 className="font-bold text-3xl my-3">{title}</h2>
             <div className="flex justify-around flex-wrap">
-                <a
-                    href={liveSite}
-                    className="block bg-blue-600 rounded px-3 py-1 m-1 xl:m-0"
+                <Link
+                    to={`/projects/${_id}`}
+                    className="bg-green-600 px-3 py-1 rounded"
                 >
-                    Live Site
-                </a>
-                <a
-                    href={clientSide}
-                    className="block bg-blue-600 rounded px-3 py-1 m-1 xl:m-0"
-                >
-                    Client Code
-                </a>
-                {serverSide ? (
-                    <a
-                        href={serverSide}
-                        className="block bg-blue-600 rounded px-3 py-1 m-1 xl:m-0"
-                    >
-                        Server Code
-                    </a>
-                ) : (
-                    <span className="hidden"></span>
-                )}
+                    Details
+                </Link>
             </div>
         </div>
     );

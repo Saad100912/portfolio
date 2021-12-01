@@ -2,6 +2,7 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon } from "@heroicons/react/outline";
 import { XIcon } from "@heroicons/react/outline";
+import { Link } from "react-router-dom";
 
 const navigation = [
     { name: "Home", href: "#home" },
@@ -38,11 +39,13 @@ const Navigation = () => {
                             </div>
                             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex-shrink-0 items-center hidden sm:block">
-                                    <img
-                                        src="https://i.ibb.co/njMJbTB/portfolio-logo.png"
-                                        className="w-3/4"
-                                        alt=""
-                                    />
+                                    <Link to="/home">
+                                        <img
+                                            src="https://i.ibb.co/njMJbTB/portfolio-logo.png"
+                                            className="w-3/4"
+                                            alt=""
+                                        />
+                                    </Link>
                                 </div>
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -66,10 +69,13 @@ const Navigation = () => {
                     <Disclosure.Panel className="sm:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             <div className="flex-shrink-0 flex items-center mb-5">
-                                <img
-                                    src="https://i.ibb.co/njMJbTB/portfolio-logo.png"
-                                    alt=""
-                                />
+                                <Link to="/home">
+                                    <img
+                                        src="https://i.ibb.co/njMJbTB/portfolio-logo.png"
+                                        className="w-3/4"
+                                        alt=""
+                                    />
+                                </Link>
                             </div>
                             {navigation.map((item) => (
                                 <a
